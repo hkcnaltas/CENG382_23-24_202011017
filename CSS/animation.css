@@ -1,0 +1,11 @@
+/* Define your desired animation for the form (e.g., fade in, slide in) */
+.animated {
+    animation-name: fadeIn; /* Replace with your chosen animation name */
+    animation-duration: 1s; /* Adjust duration as needed */
+    animation-fill-mode: forwards; /* Keep the animation applied after finishing */
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
