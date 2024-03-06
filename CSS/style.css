@@ -12,49 +12,67 @@ form {
     background: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
 }
 
 div {
     margin-bottom: 10px;
 }
-
-label {
-    display: block;
-    margin-bottom: 5px;
+  
+  /* Style the heading */
+h1 {
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Add space below heading */
 }
-
+  
+  /* Style the labels */
+label {
+    display: block; /* Display labels on their own line */
+    margin-bottom: 5px; /* Add space below labels */
+}
+  
+  /* Style the input fields */
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="email"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    box-sizing: border-box; /* Ekstra dolgu ve sınırların genişlik ve yüksekliğe dahil olmasını sağlar */
+    box-sizing: border-box;
+}
+  
+  /* Style the green button */
+.green-button {
+    background-color: peru; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+   
+    padding: 10px 85px; /* Add padding to button */
+    border-radius: 5px; /* Add rounded corners to button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.2s ease-in-out; /* Add smooth transition effect */
+}
+  
+  /* Add hover effect to green button */
+.green-button:hover {
+    background-color: #007722; /* Darken green color on hover */
 }
 
-button[type="login"] {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    background: green;
-    color: green;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s ease; /* Animasyon için geçiş efekti */
-}
-
-button[type="submit"]:hover {
-    background: #45a049;
-    
-}
-
-table, th, td {
-    border: 1px solid;
-    width: 100%;
+table{
+    width: 800px;
     border-collapse: collapse;
-    border: 1px solid;
-    text-align: center;
-  }
+    margin: 0 auto;
+}
+th, td{
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border: 1px solid black;
+}
+th{
+    background-color: #f2f2f2;
+    color: black;
+}
+tr:hover {background-color: #cacaca;}
