@@ -84,3 +84,16 @@
       .container {
         text-align: center;
       }
+
+      .button {
+        text-align: center;
+        border-radius: 3px;
+        background-color: #c5c5c5;
+        border: none;
+        color: black;
+        padding: 10px 8px;
+        font-size: 16px;
+        margin-left: 400px;
+        margin-right: 400px;
+        border-radius: 5px;
+      }

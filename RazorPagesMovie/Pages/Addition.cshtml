@@ -1,0 +1,37 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Addition Form";
+}
+<h1>@ViewData["Title"]</h1>
+
+<form>
+    <label for="input1">Enter First Number:</label><br>
+    <input type="number" id="input1" placeholder="Enter number 1" class="elementToToggle"><br><br>
+    <label for="input2">Enter Second Number:</label><br>
+    <input type="number" id="input2" placeholder="Enter number 2" class="elementToToggle"><br><br>
+    <button type="button" id="calculateButton">Calculate Sum</button>
+    <button type="button" id="clearButton">Clear</button><br><br>
+    <div id="result"></div>
+</form>
+
+<script>
+    document.getElementById("calculateButton").addEventListener("click", function() {
+        var num1 = parseFloat(document.getElementById("input1").value);
+        var num2 = parseFloat(document.getElementById("input2").value);
+        var sum = num1 + num2;
+        document.getElementById("result").innerHTML = "Sum: " + sum;
+    });
+
+    document.getElementById("clearButton").addEventListener("click", function() {
+        var elements = document.getElementsByClassName("elementToToggle");
+        for (var i = 0; i < elements.length; i++) {
+            if (elements[i].style.display !== "none") {
+                elements[i].style.display = "none";
+            } else {
+                elements[i].style.display = "block";
+            }
+        }
+        document.getElementById("result").innerHTML = "";
+    });
+</script>

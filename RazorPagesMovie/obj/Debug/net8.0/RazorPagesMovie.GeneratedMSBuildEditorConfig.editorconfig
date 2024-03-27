@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = c:\Users\altas\OneDrive\Masaüstü\CENG382\CENG382_23-24_202011017\RazorPagesMovie
 build_property._RazorSourceGeneratorDebug = 
 
+[c:/Users/altas/OneDrive/Masaüstü/CENG382/CENG382_23-24_202011017/RazorPagesMovie/Pages/Addition.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkaXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [c:/Users/altas/OneDrive/Masaüstü/CENG382/CENG382_23-24_202011017/RazorPagesMovie/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -26,8 +30,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/altas/OneDrive/Masaüstü/CENG382/CENG382_23-24_202011017/RazorPagesMovie/Pages/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+[c:/Users/altas/OneDrive/Masaüstü/CENG382/CENG382_23-24_202011017/RazorPagesMovie/Pages/Lab5Page.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGFiNVBhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/Users/altas/OneDrive/Masaüstü/CENG382/CENG382_23-24_202011017/RazorPagesMovie/Pages/Shared/_ValidationScriptsPartial.cshtml]
