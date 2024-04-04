@@ -1,0 +1,15 @@
+C:\Users\altas\OneDrive\Masaüstü\CENG382\CENG382_23-24_202011017\bin\Debug\net8.0\CENG382_23-24_202011017.exe
+C:\Users\altas\OneDrive\Masaüstü\CENG382\CENG382_23-24_202011017\bin\Debug\net8.0\CENG382_23-24_202011017.deps.json
+C:\Users\altas\OneDrive\Masaüstü\CENG382\CENG382_23-24_202011017\bin\Debug\net8.0\CENG382_23-24_202011017.runtimeconfig.json
+C:\Users\altas\OneDrive\Masaüstü\CENG382\CENG382_23-24_202011017\bin\Debug\net8.0\CENG382_23-24_202011017.dll
+C:\Users\altas\OneDrive\Masaüstü\CENG382\CENG382_23-24_202011017\bin\Debug\net8.0\CENG382_23-24_202011017.pdb
+C:\Users\altas\OneDrive\Masaüstü\CENG382\CENG382_23-24_202011017\obj\Debug\net8.0\CENG382_23-24_202011017.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\altas\OneDrive\Masaüstü\CENG382\CENG382_23-24_202011017\obj\Debug\net8.0\CENG382_23-24_202011017.AssemblyInfoInputs.cache
+C:\Users\altas\OneDrive\Masaüstü\CENG382\CENG382_23-24_202011017\obj\Debug\net8.0\CENG382_23-24_202011017.AssemblyInfo.cs
+C:\Users\altas\OneDrive\Masaüstü\CENG382\CENG382_23-24_202011017\obj\Debug\net8.0\CENG382_23-24_202011017.csproj.CoreCompileInputs.cache
+C:\Users\altas\OneDrive\Masaüstü\CENG382\CENG382_23-24_202011017\obj\Debug\net8.0\CENG382_23-24_202011017.sourcelink.json
+C:\Users\altas\OneDrive\Masaüstü\CENG382\CENG382_23-24_202011017\obj\Debug\net8.0\CENG382_23-24_202011017.dll
+C:\Users\altas\OneDrive\Masaüstü\CENG382\CENG382_23-24_202011017\obj\Debug\net8.0\refint\CENG382_23-24_202011017.dll
+C:\Users\altas\OneDrive\Masaüstü\CENG382\CENG382_23-24_202011017\obj\Debug\net8.0\CENG382_23-24_202011017.pdb
+C:\Users\altas\OneDrive\Masaüstü\CENG382\CENG382_23-24_202011017\obj\Debug\net8.0\CENG382_23-24_202011017.genruntimeconfig.cache
+C:\Users\altas\OneDrive\Masaüstü\CENG382\CENG382_23-24_202011017\obj\Debug\net8.0\ref\CENG382_23-24_202011017.dll
