@@ -1,31 +1,42 @@
-﻿using System;
-using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using HotelReservationSystem.Data;
 
-namespace ReservationSystem
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddRazorPages();
+builder.Services.AddDbContext<HotelReservationContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Add session management
+builder.Services.AddSession(options =>
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            var RepoRoom = new RepoRoom("Data.json");
-            var RepoReservation = new RepoReservation("reservation.json");
-            var RepoLogger = new RepoLogger("log.json");
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 
-            var reservationService = new ReservationHandler(RepoReservation, RepoRoom, RepoLogger);
+// Add IHttpContextAccessor
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
-            var targetRoom = repoRoom.GetRooms().FirstOrDefault(r => r.RoomId == "A-116");
-            var newReservation = new Reservation(DateTime.Now, DateTime.Today, "Hilal Altaş", targetRoom);
-            reservationService.AddReservation(newReservation);
-            DisplayReservations(reservationRepo);
-        }
+var app = builder.Build();
 
-        static void DisplayReservations(ReservationRepository repository)
-        {
-            var reservations = repository.GetAllReservations();
-            foreach (var reservation in reservations)
-            {
-                Console.WriteLine($"Reservation: {reservation.ReserverName} on {reservation.Date} at {reservation.Time} in {reservation.Room.RoomName}");
-            }
-        }
-    }
+// Configure the HTTP request pipeline.
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Error");
+    app.UseHsts();
 }
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseRouting();
+
+// Use session
+app.UseSession();
+
+app.UseAuthorization();
+
+app.MapRazorPages();
+
+app.Run();

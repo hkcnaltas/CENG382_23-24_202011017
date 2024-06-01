@@ -1,0 +1,65 @@
+@page
+@model HotelReservationSystem.Pages.LoginModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Hotel Reservation System</title>
+    <style>
+        body {
+            background-image: url('/images/screen.jpg');
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            background-position: center; 
+            color: white; 
+        }
+        h1 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-control {
+            background-color: rgba(255, 255, 255, 0.2); 
+            color: white;
+        }
+        .form-control::placeholder {
+            color: white;
+            opacity: 0.5;
+        }
+        .text-danger {
+            color: #ff3860;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label for="emailInput">Email Address</label>
+        <input id="emailInput" name="Input.Email" class="form-control" type="email" />
+        <span class="text-danger" asp-validation-for="Input.Email"></span>
+    </div>
+    <div class="form-group">
+        <label for="passwordInput">Password</label>
+        <input id="passwordInput" name="Input.Password" class="form-control" type="password" />
+        <span class="text-danger" asp-validation-for="Input.Password"></span>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Sign In</button>
+    </div>
+</form>
+
+    
+
+
+</body>
+</html>

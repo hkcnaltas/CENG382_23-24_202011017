@@ -1,0 +1,75 @@
+@page
+@model HotelReservationSystem.Pages.CreateReservationModel
+@{
+    ViewData["Title"] = "Create Reservation";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALTAS HOTELS Creating Reservation System</title>
+    <style>
+        body {
+            background-image: url('/images/screen.jpeg');
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            background-position: center; 
+            color: white; 
+        }
+        h1 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+        }
+        .btn-primary {
+            background-color: #154e8a;
+            border-color: #154e8a;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-control {
+            background-color: rgba(255, 255, 255, 0.2); 
+            color: white;
+        }
+        .form-control::placeholder {
+            color: white;
+            opacity: 0.5;
+        }
+        .text-danger {
+            color: #9f1f39;
+        }
+    </style>
+</head>
+<body>
+    <h1>New Reservation</h1>
+
+    <form method="post">
+        <div class="form-group">
+            <label for="roomSelect">Room</label>
+            <select id="roomSelect" name="Reservation.RoomId" class="form-control">
+                @foreach (var room in Model.Rooms)
+                {
+                    <option value="@room.Id">@room.Name</option>
+                }
+            </select>
+            <span class="text-danger" asp-validation-for="Reservation.RoomId"></span>
+        </div>
+        <div class="form-group">
+            <label for="startDate">Start Date</label>
+            <input id="startDate" name="Reservation.StartDate" class="form-control" type="date" />
+            <span class="text-danger" asp-validation-for="Reservation.StartDate"></span>
+        </div>
+        <div class="form-group">
+            <label for="endDate">End Date</label>
+            <input id="endDate" name="Reservation.EndDate" class="form-control" type="date" />
+            <span class="text-danger" asp-validation-for="Reservation.EndDate"></span>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>

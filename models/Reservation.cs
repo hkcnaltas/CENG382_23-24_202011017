@@ -1,18 +1,13 @@
-namespace ReservationSystem
+namespace HotelReservationSystem.Models
 {
     public class Reservation
     {
-        public DateTime Time { get; }
-        public DateTime Date { get; }
-        public string ReserverName { get; }
-        public Room Room { get; }
+        public int Id { get; set; }
+        public int RoomId { get; set; }
+        public string UserName { get; set; } = string.Empty;
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }
 
-        public Reservation(DateTime time, DateTime date, string reserverName, Room room)
-        {
-            Time = time;
-            Date = date;
-            ReserverName = reserverName;
-            Room = room;
-        }
+        public Room? Room { get; set; } // Varsayılan değer kaldırıldı, nullable olarak işaretlendi
     }
 }
